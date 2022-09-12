@@ -120,15 +120,15 @@
 
     Console.WriteLine("Результат:");
 
-    string result = "";
-    for (int j = 0; j < COLUMNS; j++)
+   string result = "";
+    for (int i = 0; i < ROWS; i++)
     {
         int temp = 0;
-        for (int i = 0; i < ROWS; i++)
+        for (int j = 0; j < COLUMNS; j++)
         {
             temp += array[i, j];
         }
-        result = result + ((float)temp / COLUMNS) + "\n";
+        result = result + ((float)temp / ROWS) + "\n";
     }
     Console.WriteLine(result);
 }
